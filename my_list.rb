@@ -10,8 +10,9 @@ class MyList
   end
 
   def each(&block)
-    for item in @list
+    @list.each do |item|
       block.call(item)
+    end
   end
 end
 
